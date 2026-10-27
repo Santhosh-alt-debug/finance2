@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stackly Finance | Loans, Insurance &amp; Investments Made Simple</title>
+  <meta name="description" content="Stackly Finance brings personal loans, home and auto financing, insurance and mutual funds together with clear terms and fast, digital approvals.">
+  <meta name="theme-color" content="#0a2540">
+  <meta property="og:title" content="Stackly Finance | Loans, Insurance &amp; Investments Made Simple">
+  <meta property="og:description" content="Borrow, protect and grow with one trusted partner.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-page="home">
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Borrow, protect and grow with one trusted partner</h1>
+          <p class="lead">Stackly Finance brings personal loans, home and auto financing, insurance and mutual funds together, with clear terms and no hidden charges.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="calculator.html">Check your EMI</a>
+            <a class="btn btn-ghost" href="contact.html">Talk to an advisor</a>
+          </div>
+          <ul class="checks">
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>No hidden fees</li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Decisions in 24 hours</li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Paperless process</li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <img src="hero.webp" width="960" height="720" fetchpriority="high" alt="Rising gold bar chart with a trend line on a midnight background, representing growing savings">
+          <div class="mini-calc" id="mini-calc" data-rate="10.5">
+            <h2>Estimate your EMI</h2>
+            <div class="mc-row">
+              <label for="mc-amount">Loan amount <output id="mc-amount-out" for="mc-amount">&#8377;5,00,000</output></label>
+              <input type="range" id="mc-amount" min="50000" max="5000000" step="10000" value="500000">
+            </div>
+            <div class="mc-row">
+              <label for="mc-tenure">Tenure <output id="mc-tenure-out" for="mc-tenure">36 months</output></label>
+              <input type="range" id="mc-tenure" min="6" max="84" step="6" value="36">
+            </div>
+            <div class="mc-result" aria-live="polite"><span>Monthly EMI</span><strong id="mc-result">&#8377;16,251</strong></div>
+            <p class="mc-note">At 10.5% a year. <a href="calculator.html">Open the full calculator</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="services-title">Everything you need to manage your money</h2>
+          <p class="lead">Pick a product to see rates, eligibility and how to apply.</p>
+        </div>
+        <div class="grid grid-3">
+          <a class="card reveal" href="personal-loans.html">
+            <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-loan"/></svg></span>
+            <h3>Personal Loans</h3>
+            <p>Cover weddings, travel, medical bills or a big purchase with fixed EMIs and no collateral.</p>
+            <span class="more">Learn more</span>
+          </a>
+          <a class="card reveal" href="home-auto-loans.html">
+            <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-home"/></svg></span>
+            <h3>Home &amp; Auto Loans</h3>
+            <p>Finance a home or vehicle with long tenures and rates that stay competitive.</p>
+            <span class="more">Learn more</span>
+          </a>
+          <a class="card reveal" href="insurance.html">
+            <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg></span>
+            <h3>Insurance</h3>
+            <p>Health, term life and vehicle cover that pays out without a maze of paperwork.</p>
+            <span class="more">Learn more</span>
+          </a>
+          <a class="card reveal" href="investments.html">
+            <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-chart"/></svg></span>
+            <h3>Investments &amp; Mutual Funds</h3>
+            <p>Start a SIP from a small amount and build a portfolio that matches your goals.</p>
+            <span class="more">Learn more</span>
+          </a>
+          <a class="card reveal" href="calculator.html">
+            <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-calc"/></svg></span>
+            <h3>EMI Calculator</h3>
+            <p>See your monthly payment, total interest and repayment schedule before you apply.</p>
+            <span class="more">Try the calculator</span>
+          </a>
+          <a class="card reveal" href="pricing.html">
+            <span class="icon-box"><svg class="ico" aria-hidden="true"><use href="#i-tag"/></svg></span>
+            <h3>Plans &amp; Pricing</h3>
+            <p>Compare plans for individuals and small businesses, with fees listed up front.</p>
+            <span class="more">See plans</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Stackly Finance in numbers">
+      <div class="container grid grid-4">
+        <div class="stat"><strong data-count="25000" data-suffix="+">25,000+</strong><span>Customers served</span></div>
+        <div class="stat"><strong data-count="480" data-prefix="&#8377;" data-suffix=" Cr">&#8377;480 Cr</strong><span>Loans disbursed</span></div>
+        <div class="stat"><strong data-count="4.8" data-decimals="1" data-suffix="/5">4.8/5</strong><span>Average customer rating</span></div>
+        <div class="stat"><strong data-count="24" data-suffix=" hrs">24 hrs</strong><span>Typical approval time</span></div>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="reviews-title">What our customers say</h2>
+        </div>
+        <div class="grid grid-3">
+          <figure class="card quote reveal">
+            <blockquote><p>I applied on my phone in the evening and had the loan approved the next morning. The EMI was exactly what the calculator showed.</p></blockquote>
+            <figcaption><img class="avatar" src="avatar-meena.webp" width="48" height="48" loading="lazy" alt="Avatar with initials MR"><span><strong>Meena R.</strong>Shop owner, Salem</span></figcaption>
+          </figure>
+          <figure class="card quote reveal">
+            <blockquote><p>Moving my SIPs and insurance into one account saved me a lot of tracking. Support answers within minutes.</p></blockquote>
+            <figcaption><img class="avatar" src="avatar-karthik.webp" width="48" height="48" loading="lazy" alt="Avatar with initials KS"><span><strong>Karthik S.</strong>Software engineer, Coimbatore</span></figcaption>
+          </figure>
+          <figure class="card quote reveal">
+            <blockquote><p>They explained every charge before I signed. For our home loan, that honesty mattered more than a slightly lower rate.</p></blockquote>
+            <figcaption><img class="avatar" src="avatar-lakshmi.webp" width="48" height="48" loading="lazy" alt="Avatar with initials LP"><span><strong>Lakshmi P.</strong>Teacher, Kumbakonam</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta reveal">
+          <div>
+            <h2 id="cta-title">Ready to get started?</h2>
+            <p>Create a free account in two minutes, or ask us anything first.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-light" href="login.html#signup">Sign up free</a>
+            <a class="btn btn-outline-light" href="contact.html">Contact us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Stackly Finance</title>
+  <meta name="description" content="Contact Stackly Finance by form, phone or email. We reply within one working day.">
+  <meta name="theme-color" content="#0a2540">
+  <meta property="og:title" content="Contact Us | Stackly Finance">
+  <meta property="og:description" content="Contact Stackly Finance by form, phone or email. We reply within one working day.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-page="contact">
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main">
+<section class="page-hero"><div class="container"><h1>Contact us</h1><p class="lead">Tell us what you need and the right advisor will get back to you within one working day.</p></div></section><section class="section"><div class="container"><div class="split"><form class="card" id="contact-form" novalidate><h2>Send us a message</h2><div id="contact-status" role="status" hidden></div><div class="two"><div class="field"><label for="ct-name">Full name</label><input id="ct-name" name="ct-name" type="text" required data-label="your full name" data-rule="name" autocomplete="name" aria-describedby="ct-name-err"><p class="field-error" id="ct-name-err" aria-live="polite"></p></div><div class="field"><label for="ct-email">Email</label><input id="ct-email" name="ct-email" type="email" required data-label="your email address" data-rule="email" autocomplete="email" aria-describedby="ct-email-err"><p class="field-error" id="ct-email-err" aria-live="polite"></p></div></div><div class="two"><div class="field"><label for="ct-phone">Mobile number</label><input id="ct-phone" name="ct-phone" type="tel" required data-label="your mobile number" data-rule="phone" autocomplete="tel-national" inputmode="numeric" aria-describedby="ct-phone-err"><p class="hint">10 digits, no spaces.</p><p class="field-error" id="ct-phone-err" aria-live="polite"></p></div><div class="field"><label for="ct-topic">Topic</label><select id="ct-topic" name="ct-topic" required data-label="a topic" aria-describedby="ct-topic-err"><option value="">Select</option><option value="loans">Loans</option><option value="insurance">Insurance</option><option value="investments">Investments</option><option value="support">Account support</option><option value="other">Something else</option></select><p class="field-error" id="ct-topic-err" aria-live="polite"></p></div></div><div class="field"><label for="ct-msg">Message</label><textarea id="ct-msg" name="message" required minlength="10" data-label="your message" aria-describedby="ct-msg-err"></textarea><p class="field-error" id="ct-msg-err" aria-live="polite"></p></div><div class="field"><div class="check"><input type="checkbox" id="ct-consent" required data-label="agree to be contacted" aria-describedby="ct-consent-err"><label for="ct-consent">I agree that Stackly Finance may contact me about my enquiry.</label></div><p class="field-error" id="ct-consent-err" aria-live="polite"></p></div><p class="notice notice-err form-summary" role="alert" hidden></p><button class="btn btn-primary" type="submit">Send message</button></form><div class="card"><h2>Visit or call</h2><ul class="contact-list"><li><strong>Head office</strong>Stackly Finance Pvt. Ltd., Salem, Tamil Nadu</li><li><strong>Phone</strong>+91 90000 00000</li><li><strong>Email</strong>hello@stacklyfinance.example</li><li><strong>Hours</strong>Monday to Saturday, 9 am to 6 pm</li></ul></div></div></div></section>
+  </main>
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="script.js"></script>
+</body>
+</html>

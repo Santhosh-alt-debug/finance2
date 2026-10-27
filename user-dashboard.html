@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>User Dashboard | Stackly Finance</title>
+  <meta name="description" content="Your Stackly Finance dashboard: loans, EMIs, investments and activity.">
+  <meta name="theme-color" content="#0a2540">
+  <meta property="og:title" content="User Dashboard | Stackly Finance">
+  <meta property="og:description" content="Your Stackly Finance dashboard: loans, EMIs, investments and activity.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-page="dashboard" data-require="user">
+<header class="dash-bar"><div class="container dash-bar-in"><img class="logo-img" src="logo-light.webp" width="137" height="40" alt="Stackly"><span class="dash-title">User dashboard</span><div class="dash-actions"><a class="btn btn-ghost btn-sm" href="login.html">Back</a><button class="btn btn-primary btn-sm" type="button" data-logout>Log out</button></div></div></header>
+<section class="auth-page" id="gate" hidden><div class="container"><div class="auth-wrap card center"><h1 id="gate-title"></h1><p id="gate-msg"></p><a class="btn btn-primary" id="gate-link" href="login.html">Go to login</a></div></div></section>
+  <main id="main" hidden>
+<section class="page-hero dash-hero"><div class="container dash-head"><div><span class="role-badge">User account</span><h1>Welcome back, <span data-user-first>there</span></h1><p>A summary of your loans, investments and cover.</p></div></div></section><section class="section"><div class="container"><div class="grid grid-4"><div class="card dash-stat reveal"><span>Outstanding loan</span><strong data-count="450000" data-prefix="₹" data-suffix="">₹4,50,000</strong><small>Personal loan, 22 EMIs left</small></div><div class="card dash-stat reveal"><span>Next EMI</span><strong data-count="16251" data-prefix="₹" data-suffix="">₹16,251</strong><small>Due 5 Nov 2026</small></div><div class="card dash-stat reveal"><span>Investments</span><strong data-count="125000" data-prefix="₹" data-suffix="">₹1,25,000</strong><small>Across 3 funds</small></div><div class="card dash-stat reveal"><span>Credit score</span><strong data-count="782" data-prefix="" data-suffix="">782</strong><small>Excellent range (illustrative)</small></div></div><div class="split dash-grid"><div class="col"><div class="card reveal"><h3>Personal loan</h3><p class="meta">SF-PL-20418 &middot; 10.5% a year &middot; 36 months</p><div class="progress-row"><span>14 of 36 EMIs paid</span><span>39%</span></div><div class="pbar" role="progressbar" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100" aria-label="Loan repaid"><span class="fill" style="--w:39%"></span></div><div class="table-wrap"><table><caption>Upcoming EMIs</caption><thead><tr><th scope="col">Date</th><th scope="col">Amount</th><th scope="col">Status</th></tr></thead><tbody><tr><th scope="row">5 Nov 2026</th><td>₹16,251</td><td><span class="badge-s warn">Due soon</span></td></tr><tr><th scope="row">5 Dec 2026</th><td>₹16,251</td><td><span class="badge-s info">Scheduled</span></td></tr><tr><th scope="row">5 Jan 2027</th><td>₹16,251</td><td><span class="badge-s info">Scheduled</span></td></tr><tr><th scope="row">5 Feb 2027</th><td>₹16,251</td><td><span class="badge-s info">Scheduled</span></td></tr></tbody></table></div></div><div class="card reveal"><div class="table-wrap"><table><caption>Your investments</caption><thead><tr><th scope="col">Fund</th><th scope="col">Type</th><th scope="col">Monthly SIP</th><th scope="col">Value</th></tr></thead><tbody><tr><th scope="row">Index Equity Fund</th><td>Index equity</td><td>₹2,000</td><td>₹68,400</td></tr><tr><th scope="row">Hybrid Advantage</th><td>Hybrid</td><td>₹1,500</td><td>₹32,100</td></tr><tr><th scope="row">Liquid Reserve</th><td>Liquid</td><td>&mdash;</td><td>₹24,500</td></tr></tbody></table></div><p class="note">Mutual fund investments are subject to market risks. Figures are illustrative.</p></div></div><div class="col"><div class="card reveal"><h3>Your profile</h3><ul class="list-plain"><li>Name<span><b data-user-name></b></span></li><li>Email<span><b data-user-email></b></span></li><li>Account type<span>User</span></li></ul></div><div class="card reveal"><h3>Quick actions</h3><div class="hero-actions" style="flex-direction:column;align-items:stretch"><a class="btn btn-primary" href="calculator.html">Plan a new loan</a><a class="btn btn-ghost" href="investments.html">Explore funds</a><a class="btn btn-ghost" href="contact.html">Contact support</a></div></div><div class="card reveal"><h3>Recent activity</h3><ul class="list-plain"><li>EMI paid<span>5 Oct 2026</span></li><li>SIP debited<span>3 Oct 2026</span></li><li>KYC verified<span>12 Sep 2026</span></li><li>Health policy renewal reminder<span>Due 6 Dec 2026</span></li></ul></div></div></div></div></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

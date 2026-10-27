@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loan &amp; EMI Calculator | Stackly Finance</title>
+  <meta name="description" content="Free EMI calculator from Stackly Finance. Adjust amount, rate and tenure to see your monthly payment, total interest and repayment schedule.">
+  <meta name="theme-color" content="#0a2540">
+  <meta property="og:title" content="Loan &amp; EMI Calculator | Stackly Finance">
+  <meta property="og:description" content="Free EMI calculator from Stackly Finance. Adjust amount, rate and tenure to see your monthly payment, total interest and repayment schedule.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-page="calculator">
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main">
+<section class="page-hero"><div class="container"><h1>Loan and EMI calculator</h1><p class="lead">Move the sliders or type a value to see your monthly payment update instantly.</p></div></section><section class="section"><div class="container"><div class="calc" id="calc"><div class="card"><div class="calc-field" data-field="amount" data-name="an amount"><div class="calc-top"><label for="n-amount">Loan amount</label><div class="num-wrap"><span>₹</span><input type="number" id="n-amount" min="50000" max="10000000" step="10000" value="1000000" inputmode="decimal" aria-describedby="e-amount"></div></div><input type="range" id="s-amount" min="50000" max="10000000" step="10000" value="1000000" aria-label="Loan amount slider"><div class="range-meta"><span>₹50,000</span><span>₹1 crore</span></div><p class="field-error" id="e-amount" aria-live="polite"></p></div><div class="calc-field" data-field="rate" data-name="a rate"><div class="calc-top"><label for="n-rate">Interest rate</label><div class="num-wrap"><input type="number" id="n-rate" min="5" max="24" step="0.1" value="10.5" inputmode="decimal" aria-describedby="e-rate"><span>% a year</span></div></div><input type="range" id="s-rate" min="5" max="24" step="0.1" value="10.5" aria-label="Interest rate slider"><div class="range-meta"><span>5%</span><span>24%</span></div><p class="field-error" id="e-rate" aria-live="polite"></p></div><div class="calc-field" data-field="tenure" data-name="a tenure"><div class="calc-top"><label for="n-tenure">Tenure</label><div class="num-wrap"><input type="number" id="n-tenure" min="6" max="360" step="6" value="60" inputmode="decimal" aria-describedby="e-tenure"><span>months</span></div></div><input type="range" id="s-tenure" min="6" max="360" step="6" value="60" aria-label="Tenure slider"><div class="range-meta"><span>6 months</span><span>30 years</span></div><p class="field-error" id="e-tenure" aria-live="polite"></p></div></div><div class="card result" aria-live="polite"><p class="hint">Monthly EMI</p><p class="result-emi" id="r-emi">₹0</p><div class="donut" id="donut" role="img" aria-label="Share of principal and interest in total payment"></div><ul class="res-list"><li><span><span class="dot" style="background:#8c6a1c"></span>Principal</span><strong id="r-principal"></strong></li><li><span><span class="dot" style="background:#0c1220"></span>Total interest</span><strong id="r-interest"></strong></li><li><span>Total payment</span><strong id="r-total"></strong></li><li><span>Tenure</span><strong id="r-tenure"></strong></li></ul></div></div></div></section><section class="section section-alt"><div class="container"><div class="table-wrap"><table><caption>Year-by-year repayment schedule</caption><thead><tr><th scope="col">Year</th><th scope="col">Principal paid</th><th scope="col">Interest paid</th><th scope="col">Balance</th></tr></thead><tbody id="schedule"></tbody></table></div><p class="note">EMI = P × r × (1+r)<sup>n</sup> ÷ ((1+r)<sup>n</sup> − 1), where r is the monthly rate and n the number of months. Results are estimates, not an offer.</p></div></section><section class="section"><div class="container"><div class="cta reveal"><div><h2>Happy with the numbers?</h2><p>Apply online and get a decision within 24 hours.</p></div><div class="cta-actions"><a class="btn btn-light" href="login.html#signup">Apply now</a><a class="btn btn-outline-light" href="personal-loans.html">See loan terms</a></div></div></div></section>
+  </main>
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="script.js"></script>
+</body>
+</html>
